@@ -21,20 +21,21 @@ body {
   font-family: var(--text-font-family);
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 li {
   list-style: none;
 }
 
 /*Header*/
 
-.container {
-  width: 1200px;
-  margin: 0 auto;
-}
-
 .global-header {
   background: #ffffff;
   display: flex;
+  justify-content: center;
 }
 
 .global-header a {
@@ -46,8 +47,11 @@ li {
   text-decoration: none;
 }
 
+/*Logo*/
+
 .logo {
   padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .logo-black {
@@ -72,6 +76,8 @@ li {
   padding-top: 60px;
   padding-bottom: 28px;
 }
+
+/*Navigation*/
 
 .main-navigation {
   display: flex;
@@ -171,6 +177,7 @@ h5 {
   padding-left: 252px;
   padding-right: 252px;
   padding-top: 200px;
+  margin-top: 0;
 }
 
 .service-button {
@@ -213,9 +220,19 @@ h5 {
   padding: 6px 22px;
 }
 
+.filter-background {
+  background: var(--info-section-color);
+  border-top: 1px solid #ececec;
+}
+
 .filter-button:hover {
   background-color: var(--link-active-color);
   color: #ffffff;
+}
+
+.filter-menu ul {
+  margin-top: 0;
+  padding-left: 0;
 }
 
 .filter-menu li {
@@ -367,6 +384,8 @@ h5 {
   margin-left: 24px;
 }
 
+/*Footer*/
+
 .footer-contacts {
   font-weight: 400;
   font-size: 14px;
@@ -383,10 +402,6 @@ h5 {
 .footer-contacts ul li + li {
   display: flex;
   margin-top: 12px;
-}
-
-.filter-background {
-  background: var(--info-section-color);
 }
 
 .footer-contacts a {
