@@ -34,7 +34,6 @@ li {
 
 .global-header {
   background: #ffffff;
-  display: flex;
   justify-content: center;
 }
 
@@ -50,6 +49,7 @@ li {
 /*Logo*/
 
 .logo {
+  display: flex;
   padding-top: 24px;
   padding-bottom: 25px;
 }
@@ -81,18 +81,18 @@ li {
 
 .main-navigation {
   display: flex;
-  margin-left: 93px;
+  padding-left: 93px;
 }
 
-.global-header .main-navigation ul {
+.main-navigation ul {
   display: flex;
   margin-top: 0;
   margin-bottom: 0;
-  padding-left: 0;
-  padding-top: 32px;
+  padding-left: 0px;
+  padding-top: 8px;
 }
 
-.global-header .main-navigation ul li + li {
+.main-navigation ul li + li {
   margin-left: 50px;
 }
 
@@ -100,7 +100,7 @@ li {
   display: flex;
   margin-top: 0;
   margin-bottom: 0;
-  padding-top: 32px;
+  padding-top: 8px;
   padding-left: 385px;
 }
 
@@ -263,8 +263,7 @@ h5 {
 
 .info-section-text {
   display: flex;
-  padding-left: 215;
-  padding-right: 215;
+  justify-content: center;
 }
 
 .info-section-text ul {
@@ -272,6 +271,10 @@ h5 {
   padding-left: 0;
   margin-top: 94px;
   margin-bottom: 0;
+}
+
+.info-section-text ul li {
+  width: 270px;
 }
 
 .info-section-text ul li + li {
@@ -411,6 +414,11 @@ h5 {
 
 .footer-contacts a:hover,
 .footer-contacts a:focus {
+  color: var(--link-active-color);
+}
+
+.main-navigation-adress a:hover,
+.main-navigation-adress a:focus {
   color: var(--link-active-color);
 }
 
